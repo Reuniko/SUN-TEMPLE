@@ -9,13 +9,14 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: mochie_water
   m_Shader: {fileID: 4800000, guid: 7e018b47cc1d059439656129107b3445, type: 3}
-  m_ShaderKeywords: _CAUSTICS_ON _DEPTHFOG_ON _DEPTH_EFFECTS_ON _EDGEFADE_ON _FLOW_ON
-    _FOAM_NORMALS_ON _FOAM_ON _NORMALMAP_1_ON _REFLECTIONS_ON _SPECULAR_ON
+  m_ShaderKeywords: _BASECOLOR_STOCHASTIC_ON _CAUSTICS_ON _DEPTHFOG_ON _EDGEFADE_ON
+    _FLOW_ON _FOAM_NORMALS_ON _FOAM_ON _NORMALMAP_1_ON _REFLECTIONS_ON _SPECULAR_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
+  m_CustomRenderQueue: 3000
+  stringTagMap:
+    RenderType: Transparent
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
@@ -143,7 +144,7 @@ Material:
     - _BackfaceReflections: 1
     - _BaseColorDistortionStrength: 0.1
     - _BaseColorOffset: 0
-    - _BaseColorStochasticToggle: 0
+    - _BaseColorStochasticToggle: 1
     - _BlendNoiseSource: 0
     - _BumpScale: 1
     - _CausticsDisp: 0.25
@@ -159,7 +160,7 @@ Material:
     - _CausticsToggle: 1
     - _CullMode: 2
     - _Cutoff: 0.5
-    - _DepthEffects: 1
+    - _DepthEffects: 0
     - _DetailNormalMapScale: 1
     - _DetailNormalStrength: 1
     - _DetailTextureMode: 0
@@ -204,7 +205,7 @@ Material:
     - _NormalStr0: 0.1
     - _NormalStr1: 0.2
     - _OcclusionStrength: 1
-    - _Opacity: 0.95
+    - _Opacity: 1
     - _OpaqueLights: 1
     - _Parallax: 0.02
     - _RainToggle: 0
@@ -265,7 +266,7 @@ Material:
     - _CausticsColor: {r: 1, g: 1, b: 1, a: 1}
     - _CausticsDistortionSpeed: {r: 0.1, g: 0.1, b: 0, a: 0}
     - _CausticsRotation: {r: -20, g: 0, b: 20, a: 0}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.48627448, g: 0.7712834, b: 1, a: 1}
     - _DetailBaseColorTint: {r: 1, g: 1, b: 1, a: 1}
     - _DetailScroll: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
