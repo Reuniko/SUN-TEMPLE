@@ -1,0 +1,318 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f11136daadff0b44ac2278a314682ab, type: 3}
+  m_Name: timer
+  m_EditorClassIdentifier: 
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 957be58084de0e048bccab14731248d4,
+    type: 2}
+  udonAssembly: ".data_start\r\n\r\n    .export time\r\n    .export Animators\r\n   
+    .sync time, linear\r\n    \r\n    __Single_0: %SystemSingle, null\r\n    __Single_1:
+    %SystemSingle, null\r\n    __instance_0: %VRCUdonUdonBehaviour, this\r\n    __eventName_0:
+    %SystemString, null\r\n    __delaySeconds_0: %SystemSingle, null\r\n    __eventTiming_0:
+    %VRCUdonCommonEnumsEventTiming, null\r\n    __instance_1: %VRCUdonUdonBehaviour,
+    this\r\n    __index_0: %SystemInt32, null\r\n    __condition_0: %SystemBoolean,
+    null\r\n    __instance_3: %UnityEngineAnimator, null\r\n    __name_0: %SystemString,
+    null\r\n    __value_0: %SystemSingle, null\r\n    __instance_4: %UnityEngineAnimatorArray,
+    null\r\n    __Int32_0: %SystemInt32, null\r\n    __start_0: %SystemInt32, null\r\n   
+    __end_0: %SystemInt32, null\r\n    __step_0: %SystemInt32, null\r\n    __instance_2:
+    %UnityEngineAnimatorArray, null\r\n    __Single_2: %SystemSingle, null\r\n   
+    __Single_3: %SystemSingle, null\r\n    __instance_5: %VRCUdonUdonBehaviour, this\r\n   
+    __eventName_1: %SystemString, null\r\n    __delaySeconds_1: %SystemSingle, null\r\n   
+    __eventTiming_1: %VRCUdonCommonEnumsEventTiming, null\r\n    __instance_6: %VRCUdonUdonBehaviour,
+    this\r\n    __index_1: %SystemInt32, null\r\n    __condition_1: %SystemBoolean,
+    null\r\n    __instance_8: %UnityEngineAnimator, null\r\n    __name_1: %SystemString,
+    null\r\n    __value_1: %SystemSingle, null\r\n    __instance_9: %UnityEngineAnimatorArray,
+    null\r\n    __Int32_1: %SystemInt32, null\r\n    __start_1: %SystemInt32, null\r\n   
+    __end_1: %SystemInt32, null\r\n    __step_1: %SystemInt32, null\r\n    __instance_7:
+    %UnityEngineAnimatorArray, null\r\n    __index_2: %SystemInt32, null\r\n    __condition_2:
+    %SystemBoolean, null\r\n    __instance_B: %UnityEngineAnimator, null\r\n    __name_2:
+    %SystemString, null\r\n    __value_2: %SystemSingle, null\r\n    __instance_C:
+    %UnityEngineAnimatorArray, null\r\n    __Int32_2: %SystemInt32, null\r\n    __start_2:
+    %SystemInt32, null\r\n    __end_2: %SystemInt32, null\r\n    __step_2: %SystemInt32,
+    null\r\n    __instance_A: %UnityEngineAnimatorArray, null\r\n    time: %SystemSingle,
+    null\r\n    Animators: %UnityEngineAnimatorArray, null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
+    .export _start\r\n    \r\n    _start:\r\n    \r\n        PUSH, time\r\n       
+    PUSH, __Single_1\r\n        PUSH, time\r\n        EXTERN, \"SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle\"\r\n       
+    PUSH, __instance_0\r\n        PUSH, __eventName_0\r\n        PUSH, __delaySeconds_0\r\n       
+    PUSH, __eventTiming_0\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEventDelayedSeconds__SystemString_SystemSingle_VRCUdonCommonEnumsEventTiming__SystemVoid\"\r\n       
+    PUSH, __instance_1\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__RequestSerialization__SystemVoid\"\r\n       
+    PUSH, Animators\r\n        PUSH, __instance_2\r\n        COPY\r\n        PUSH,
+    __instance_2\r\n        PUSH, __end_0\r\n        EXTERN, \"UnityEngineAnimatorArray.__get_Length__SystemInt32\"\r\n       
+    PUSH, __start_0\r\n        PUSH, __index_0\r\n        COPY\r\n        PUSH, __index_0\r\n       
+    PUSH, __end_0\r\n        PUSH, __condition_0\r\n        EXTERN, \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n       
+    PUSH, __condition_0\r\n        JUMP_IF_FALSE, 0x0000016C\r\n        PUSH, Animators\r\n       
+    PUSH, __instance_4\r\n        COPY\r\n        PUSH, Animators\r\n        PUSH,
+    __instance_2\r\n        COPY\r\n        PUSH, __index_0\r\n        PUSH, __Int32_0\r\n       
+    COPY\r\n        PUSH, __instance_4\r\n        PUSH, __Int32_0\r\n        PUSH,
+    __instance_3\r\n        EXTERN, \"UnityEngineAnimatorArray.__Get__SystemInt32__UnityEngineAnimator\"\r\n       
+    PUSH, __instance_3\r\n        PUSH, __name_0\r\n        PUSH, time\r\n       
+    EXTERN, \"UnityEngineAnimator.__SetFloat__SystemString_SystemSingle__SystemVoid\"\r\n       
+    PUSH, __index_0\r\n        PUSH, __step_0\r\n        PUSH, __index_0\r\n       
+    EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n       
+    JUMP, 0x00000098\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n    .export tick\r\n   
+    \r\n    tick:\r\n    \r\n        PUSH, time\r\n        PUSH, __Single_3\r\n       
+    PUSH, time\r\n        EXTERN, \"SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle\"\r\n       
+    PUSH, __instance_5\r\n        PUSH, __eventName_1\r\n        PUSH, __delaySeconds_1\r\n       
+    PUSH, __eventTiming_1\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEventDelayedSeconds__SystemString_SystemSingle_VRCUdonCommonEnumsEventTiming__SystemVoid\"\r\n       
+    PUSH, __instance_6\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__RequestSerialization__SystemVoid\"\r\n       
+    PUSH, Animators\r\n        PUSH, __instance_7\r\n        COPY\r\n        PUSH,
+    __instance_7\r\n        PUSH, __end_1\r\n        EXTERN, \"UnityEngineAnimatorArray.__get_Length__SystemInt32\"\r\n       
+    PUSH, __start_1\r\n        PUSH, __index_1\r\n        COPY\r\n        PUSH, __index_1\r\n       
+    PUSH, __end_1\r\n        PUSH, __condition_1\r\n        EXTERN, \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n       
+    PUSH, __condition_1\r\n        JUMP_IF_FALSE, 0x000002E0\r\n        PUSH, Animators\r\n       
+    PUSH, __instance_9\r\n        COPY\r\n        PUSH, Animators\r\n        PUSH,
+    __instance_7\r\n        COPY\r\n        PUSH, __index_1\r\n        PUSH, __Int32_1\r\n       
+    COPY\r\n        PUSH, __instance_9\r\n        PUSH, __Int32_1\r\n        PUSH,
+    __instance_8\r\n        EXTERN, \"UnityEngineAnimatorArray.__Get__SystemInt32__UnityEngineAnimator\"\r\n       
+    PUSH, __instance_8\r\n        PUSH, __name_1\r\n        PUSH, time\r\n       
+    EXTERN, \"UnityEngineAnimator.__SetFloat__SystemString_SystemSingle__SystemVoid\"\r\n       
+    PUSH, __index_1\r\n        PUSH, __step_1\r\n        PUSH, __index_1\r\n       
+    EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n       
+    JUMP, 0x0000020C\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n    .export _onDeserialization\r\n   
+    \r\n    _onDeserialization:\r\n    \r\n        PUSH, Animators\r\n        PUSH,
+    __instance_A\r\n        COPY\r\n        PUSH, __instance_A\r\n        PUSH, __end_2\r\n       
+    EXTERN, \"UnityEngineAnimatorArray.__get_Length__SystemInt32\"\r\n        PUSH,
+    __start_2\r\n        PUSH, __index_2\r\n        COPY\r\n        PUSH, __index_2\r\n       
+    PUSH, __end_2\r\n        PUSH, __condition_2\r\n        EXTERN, \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n       
+    PUSH, __condition_2\r\n        JUMP_IF_FALSE, 0x000003FC\r\n        PUSH, Animators\r\n       
+    PUSH, __instance_C\r\n        COPY\r\n        PUSH, Animators\r\n        PUSH,
+    __instance_A\r\n        COPY\r\n        PUSH, __index_2\r\n        PUSH, __Int32_2\r\n       
+    COPY\r\n        PUSH, __instance_C\r\n        PUSH, __Int32_2\r\n        PUSH,
+    __instance_B\r\n        EXTERN, \"UnityEngineAnimatorArray.__Get__SystemInt32__UnityEngineAnimator\"\r\n       
+    PUSH, __instance_B\r\n        PUSH, __name_2\r\n        PUSH, time\r\n       
+    EXTERN, \"UnityEngineAnimator.__SetFloat__SystemString_SystemSingle__SystemVoid\"\r\n       
+    PUSH, __index_2\r\n        PUSH, __step_2\r\n        PUSH, __index_2\r\n       
+    EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n       
+    JUMP, 0x00000328\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
+  assemblyError: 
+  graphData:
+    name: 
+    description: 
+    nodes:
+    - fullName: Variable_SystemSingle
+      uid: cd487c7f-d8a1-489c-baed-aefe6a8e87a3
+      position: {x: 0, y: 0}
+      nodeUIDs:
+      - 
+      - 
+      - 
+      - 
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|time
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|linear
+    - fullName: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEventDelayedSeconds__SystemString_SystemSingle_VRCUdonCommonEnumsEventTiming__SystemVoid
+      uid: 7d3108fd-a3f6-4861-a2c1-174873c06e5a
+      position: {x: 809.60236, y: -200}
+      nodeUIDs:
+      - 
+      - 
+      - 
+      - 
+      flowUIDs:
+      - 6e9d256c-80e6-405e-a72b-12b0bdc6d119
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|tick
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0,05
+      - unityObjectValue: {fileID: 0}
+        stringValue: VRC.Udon.Common.Enums.EventTiming, VRC.Udon.Common, Version=1.0.0.0,
+          Culture=neutral, PublicKeyToken=null|Update
+    - fullName: Event_Start
+      uid: cd9913e3-f3a3-4c86-b92f-d286b9219eac
+      position: {x: 454.70752, y: -298.52246}
+      nodeUIDs: []
+      flowUIDs:
+      - 1af29e6a-978c-4d01-aaaf-dcd4e4532542
+      nodeValues: []
+    - fullName: Event_Custom
+      uid: fc7ed6cf-d559-4ed8-995c-976039282b01
+      position: {x: 375.065, y: -203.23248}
+      nodeUIDs:
+      - 
+      flowUIDs:
+      - 1af29e6a-978c-4d01-aaaf-dcd4e4532542
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|tick
+    - fullName: Set_Variable
+      uid: 1af29e6a-978c-4d01-aaaf-dcd4e4532542
+      position: {x: 626.45013, y: -200.00003}
+      nodeUIDs:
+      - 
+      - fe56153d-b81e-4e3c-b994-c04e9098c203|0
+      - 
+      flowUIDs:
+      - 7d3108fd-a3f6-4861-a2c1-174873c06e5a
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|cd487c7f-d8a1-489c-baed-aefe6a8e87a3
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+    - fullName: Get_Variable
+      uid: 2c45df8a-6157-4bcf-a3b4-7d84c5d25c2f
+      position: {x: 270.55002, y: -95.35002}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|cd487c7f-d8a1-489c-baed-aefe6a8e87a3
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle
+      uid: fe56153d-b81e-4e3c-b994-c04e9098c203
+      position: {x: 422.80005, y: -100.35}
+      nodeUIDs:
+      - 2c45df8a-6157-4bcf-a3b4-7d84c5d25c2f|0
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0,0001
+    - fullName: VRCUdonCommonInterfacesIUdonEventReceiver.__RequestSerialization__SystemVoid
+      uid: 6e9d256c-80e6-405e-a72b-12b0bdc6d119
+      position: {x: 1155.0398, y: -200.04178}
+      nodeUIDs:
+      - 
+      flowUIDs:
+      - 500796a6-8b06-4f2e-a75a-ca257a967fd8
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: Variable_UnityEngineAnimatorArray
+      uid: 9460a288-81f5-4340-9278-926936e2d21c
+      position: {x: 0, y: 0}
+      nodeUIDs:
+      - 
+      - 
+      - 
+      - 
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Animators
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
+    - fullName: For
+      uid: 500796a6-8b06-4f2e-a75a-ca257a967fd8
+      position: {x: 549.75085, y: 220.82036}
+      nodeUIDs:
+      - 
+      - 09dd6215-d025-492b-90ec-db344ab4610a|0
+      - 
+      flowUIDs:
+      - b398d489-d420-4f77-9cbd-d6ddf82a8fe1
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|1
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|1
+    - fullName: Get_Variable
+      uid: 29b02edd-f486-4a5f-831e-f6a17558bc19
+      position: {x: 131.75082, y: 352.82028}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|9460a288-81f5-4340-9278-926936e2d21c
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: UnityEngineAnimatorArray.__get_Length__SystemInt32
+      uid: 09dd6215-d025-492b-90ec-db344ab4610a
+      position: {x: 353.75076, y: 350.82034}
+      nodeUIDs:
+      - 29b02edd-f486-4a5f-831e-f6a17558bc19|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: UnityEngineAnimatorArray.__Get__SystemInt32__UnityEngineAnimator
+      uid: a4d69d15-f5f7-4d59-9f4c-d91be5085bc6
+      position: {x: 807.75073, y: 345.82016}
+      nodeUIDs:
+      - 29b02edd-f486-4a5f-831e-f6a17558bc19|0
+      - 500796a6-8b06-4f2e-a75a-ca257a967fd8|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
+    - fullName: UnityEngineAnimator.__SetFloat__SystemString_SystemSingle__SystemVoid
+      uid: b398d489-d420-4f77-9cbd-d6ddf82a8fe1
+      position: {x: 1096.7509, y: 265.82037}
+      nodeUIDs:
+      - a4d69d15-f5f7-4d59-9f4c-d91be5085bc6|0
+      - 
+      - 49701c19-83c8-4cd8-8685-013265233257|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|time
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
+    - fullName: Get_Variable
+      uid: 49701c19-83c8-4cd8-8685-013265233257
+      position: {x: 861.7507, y: 487.8204}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|cd487c7f-d8a1-489c-baed-aefe6a8e87a3
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: Event_OnDeserialization
+      uid: bddadb30-984a-4b13-a33e-5e2000315c56
+      position: {x: 223.76541, y: 161.64612}
+      nodeUIDs: []
+      flowUIDs:
+      - 500796a6-8b06-4f2e-a75a-ca257a967fd8
+      nodeValues: []
+    updateOrder: 0
+  graphElementData: []
+  version: 1.0.0
+  showAssembly: 0
