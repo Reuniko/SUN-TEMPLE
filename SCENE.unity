@@ -5180,7 +5180,7 @@ MonoBehaviour:
   ExactGun: {fileID: 0}
   ExactGrip: {fileID: 0}
   allowManipulationWhenEquipped: 0
-  orientation: 0
+  orientation: 2
   AutoHold: 0
   InteractionText: Move Video Player
   UseText: Move Video Player
@@ -5194,7 +5194,7 @@ MonoBehaviour:
   ThrowVelocityBoostScale: 1
   currentlyHeldBy: {fileID: 0}
   pickupable: 1
-  proximity: 65.9
+  proximity: 100
 --- !u!54 &1020308518
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5228,8 +5228,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.5, z: 6.66}
-  m_Center: {x: 0, y: 0, z: -3.23}
+  m_Size: {x: 7.13, y: 3.69, z: 0.3}
+  m_Center: {x: 0, y: 0, z: -0}
 --- !u!1 &1062109505
 GameObject:
   m_ObjectHideFlags: 0
