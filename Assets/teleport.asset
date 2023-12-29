@@ -15,18 +15,19 @@ MonoBehaviour:
   serializedUdonProgramAsset: {fileID: 11400000, guid: 05f2e62d96413364e846100cfd0fe108,
     type: 2}
   udonAssembly: ".data_start\r\n\r\n    .export Target\r\n    .export Animator\r\n   
-    \r\n    __instance_0: %UnityEngineAnimator, null\r\n    __name_0: %SystemString,
-    null\r\n    __instance_1: %VRCUdonUdonBehaviour, this\r\n    __eventName_0: %SystemString,
-    null\r\n    __delaySeconds_0: %SystemSingle, null\r\n    __eventTiming_0: %VRCUdonCommonEnumsEventTiming,
-    null\r\n    __instance_2: %VRCSDKBaseVRCPlayerApi, null\r\n    __teleportPos_0:
-    %UnityEngineVector3, null\r\n    __teleportRot_0: %UnityEngineQuaternion, null\r\n   
-    onPlayerTriggerEnterPlayer: %VRCSDKBaseVRCPlayerApi, null\r\n    __instance_3:
-    %UnityEngineTransform, this\r\n    __instance_4: %UnityEngineTransform, this\r\n   
-    Target: %UnityEngineTransform, this\r\n    Animator: %UnityEngineAnimator, null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
+    .export Delay\r\n    \r\n    __instance_0: %UnityEngineAnimator, null\r\n   
+    __name_0: %SystemString, null\r\n    __instance_1: %VRCUdonUdonBehaviour, this\r\n   
+    __eventName_0: %SystemString, null\r\n    __delaySeconds_0: %SystemSingle, null\r\n   
+    __eventTiming_0: %VRCUdonCommonEnumsEventTiming, null\r\n    __instance_2: %VRCSDKBaseVRCPlayerApi,
+    null\r\n    __teleportPos_0: %UnityEngineVector3, null\r\n    __teleportRot_0:
+    %UnityEngineQuaternion, null\r\n    onPlayerTriggerEnterPlayer: %VRCSDKBaseVRCPlayerApi,
+    null\r\n    __instance_3: %UnityEngineTransform, this\r\n    __instance_4: %UnityEngineTransform,
+    this\r\n    Target: %UnityEngineTransform, this\r\n    Animator: %UnityEngineAnimator,
+    null\r\n    Delay: %SystemSingle, null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
     .export _onPlayerTriggerEnter\r\n    \r\n    _onPlayerTriggerEnter:\r\n    \r\n       
     PUSH, Animator\r\n        PUSH, __instance_0\r\n        COPY\r\n        PUSH,
     __instance_0\r\n        PUSH, __name_0\r\n        EXTERN, \"UnityEngineAnimator.__SetTrigger__SystemString__SystemVoid\"\r\n       
-    PUSH, __instance_1\r\n        PUSH, __eventName_0\r\n        PUSH, __delaySeconds_0\r\n       
+    PUSH, __instance_1\r\n        PUSH, __eventName_0\r\n        PUSH, Delay\r\n       
     PUSH, __eventTiming_0\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEventDelayedSeconds__SystemString_SystemSingle_VRCUdonCommonEnumsEventTiming__SystemVoid\"\r\n       
     JUMP, 0xFFFFFFFC\r\n    \r\n    .export Tele\r\n    \r\n    Tele:\r\n    \r\n       
     PUSH, onPlayerTriggerEnterPlayer\r\n        PUSH, __instance_2\r\n        COPY\r\n       
@@ -171,7 +172,7 @@ MonoBehaviour:
       nodeUIDs:
       - 
       - 
-      - 
+      - f8d2d674-4905-45e8-a3b6-8709bb77ee04|0
       - 
       flowUIDs:
       - 
@@ -195,6 +196,40 @@ MonoBehaviour:
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Tele
+    - fullName: Variable_SystemSingle
+      uid: fbea62e3-2ae4-46a8-bd33-f168aad73260
+      position: {x: 0, y: 0}
+      nodeUIDs:
+      - 
+      - 
+      - 
+      - 
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|4
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Delay
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
+    - fullName: Get_Variable
+      uid: f8d2d674-4905-45e8-a3b6-8709bb77ee04
+      position: {x: 727.50006, y: -483.82034}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|fbea62e3-2ae4-46a8-bd33-f168aad73260
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
     updateOrder: 0
   graphElementData: []
   version: 1.0.0
