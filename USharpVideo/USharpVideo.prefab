@@ -1666,9 +1666,9 @@ GameObject:
   - component: {fileID: 6421412927524094472}
   - component: {fileID: 6421412927524094475}
   - component: {fileID: 6421412927524094474}
-  - component: {fileID: 7419496278896415070}
+  - component: {fileID: 4219295245006782894}
   - component: {fileID: 6421412927524094473}
-  - component: {fileID: 943493732299194000}
+  - component: {fileID: 8073158276990192211}
   - component: {fileID: 6421412927524094469}
   m_Layer: 0
   m_Name: VideoScreen
@@ -1739,7 +1739,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &7419496278896415070
+--- !u!114 &4219295245006782894
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1786,7 +1786,7 @@ MonoBehaviour:
   serializedPublicVariablesBytesString: Ai8AAAAAATIAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlAFQAYQBiAGwAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AAAAAAAYBAAAAAAAAACcBBAAAAHQAeQBwAGUAAWgAAABTAHkAcwB0AGUAbQAuAEMAbwBsAGwAZQBjAHQAaQBvAG4AcwAuAEcAZQBuAGUAcgBpAGMALgBMAGkAcwB0AGAAMQBbAFsAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4ALgBJAG4AdABlAHIAZgBhAGMAZQBzAC4ASQBVAGQAbwBuAFYAYQByAGkAYQBiAGwAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AXQBdACwAIABtAHMAYwBvAHIAbABpAGIAAQEJAAAAVgBhAHIAaQBhAGIAbABlAHMALwEAAAABaAAAAFMAeQBzAHQAZQBtAC4AQwBvAGwAbABlAGMAdABpAG8AbgBzAC4ARwBlAG4AZQByAGkAYwAuAEwAaQBzAHQAYAAxAFsAWwBWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEkAbgB0AGUAcgBmAGEAYwBlAHMALgBJAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlACwAIABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgBdAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgEAAAAAAAAAAi8CAAAAAUkAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlAGAAMQBbAFsAUwB5AHMAdABlAG0ALgBJAG4AdAAzADIALAAgAG0AcwBjAG8AcgBsAGkAYgBdAF0ALAAgAFYAUgBDAC4AVQBkAG8AbgAuAEMAbwBtAG0AbwBuAAIAAAAGAgAAAAAAAAAnAQQAAAB0AHkAcABlAAEXAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwAsACAAbQBzAGMAbwByAGwAaQBiACcBCgAAAFMAeQBtAGIAbwBsAE4AYQBtAGUAAR8AAABfAF8AXwBVAGQAbwBuAFMAaABhAHIAcABCAGUAaABhAHYAaQBvAHUAcgBWAGUAcgBzAGkAbwBuAF8AXwBfACcBBAAAAHQAeQBwAGUAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiABcBBQAAAFYAYQBsAHUAZQACAAAABwUHBQcF
   publicVariablesUnityEngineObjects: []
   publicVariablesSerializationDataFormat: 0
---- !u!114 &943493732299194000
+--- !u!114 &8073158276990192211
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1808,7 +1808,7 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 6421412927524094469}
-  sourceVideoPlayer: {fileID: 4086213995371826145}
+  sourceVideoPlayer: {fileID: 2867614676871669148}
   texParam: _EmissionMap
   avProToggleParam: _IsAVProInput
   useSharedMaterial: 0
@@ -2753,7 +2753,7 @@ GameObject:
   - component: {fileID: 6421412927715893476}
   - component: {fileID: 6421412927715893483}
   - component: {fileID: 6421412927715893482}
-  - component: {fileID: 1705964623145717214}
+  - component: {fileID: 968544706651058032}
   - component: {fileID: 6421412927715893477}
   - component: {fileID: 6421412927715893480}
   m_Layer: 0
@@ -2821,7 +2821,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1705964623145717214
+--- !u!114 &968544706651058032
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4153,7 +4153,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6421412928178292073}
-  - component: {fileID: 4086213995371826145}
+  - component: {fileID: 2867614676871669148}
   - component: {fileID: 6421412928178292072}
   m_Layer: 0
   m_Name: USharpVideo
@@ -4180,7 +4180,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4086213995371826145
+--- !u!114 &2867614676871669148
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4653,7 +4653,7 @@ GameObject:
   - component: {fileID: 6421412928314014388}
   - component: {fileID: 6421412928314014390}
   - component: {fileID: 6421412928314014385}
-  - component: {fileID: 2597329954226545154}
+  - component: {fileID: 4389685190990016901}
   - component: {fileID: 6421412928314014391}
   - component: {fileID: 6421412928314014384}
   - component: {fileID: 6421412928314014387}
@@ -4749,7 +4749,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
---- !u!114 &2597329954226545154
+--- !u!114 &4389685190990016901
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4771,7 +4771,7 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 6421412928314014391}
-  targetVideoPlayer: {fileID: 4086213995371826145}
+  targetVideoPlayer: {fileID: 2867614676871669148}
   urlField: {fileID: 6421412928944863243}
   urlFieldPlaceholderText: {fileID: 6421412929140681410}
   statusTextField: {fileID: 6421412928703596152}
@@ -4790,8 +4790,8 @@ MonoBehaviour:
   stopIcon: {fileID: 6421412927567298491}
   loopButtonBackground: {fileID: 6421412927689609870}
   loopButtonIcon: {fileID: 6421412927410666673}
-  syncController: {fileID: 8302874716510816788}
-  volumeController: {fileID: 1705964623145717214}
+  syncController: {fileID: 7504735466902958526}
+  volumeController: {fileID: 968544706651058032}
   redGraphicColor: {r: 0.6320754, g: 0.19677822, b: 0.19677822, a: 1}
   whiteGraphicColor: {r: 0.9433962, g: 0.9433962, b: 0.9433962, a: 1}
   buttonBackgroundColor: {r: 0.21318094, g: 0.18627624, b: 0.21698111, a: 1}
@@ -6216,7 +6216,7 @@ GameObject:
   - component: {fileID: 6421412928588461825}
   - component: {fileID: 6421412928588461834}
   - component: {fileID: 6421412928588461829}
-  - component: {fileID: 8302874716510816788}
+  - component: {fileID: 7504735466902958526}
   - component: {fileID: 6421412928588461830}
   - component: {fileID: 6421412928588461831}
   - component: {fileID: 6421412928588461835}
@@ -6289,7 +6289,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &8302874716510816788
+--- !u!114 &7504735466902958526
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6311,7 +6311,7 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 6421412928588461830}
-  videoPlayerControls: {fileID: 2597329954226545154}
+  videoPlayerControls: {fileID: 4389685190990016901}
   sliderTransform: {fileID: 6421412927837618748}
 --- !u!114 &6421412928588461830
 MonoBehaviour:
@@ -8186,7 +8186,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6421412929076350979}
-  - component: {fileID: 2733467297187541252}
+  - component: {fileID: 2759833707270980084}
   - component: {fileID: 6421412929076350977}
   - component: {fileID: 6421412929076350976}
   - component: {fileID: 6421412929076350978}
@@ -8213,7 +8213,7 @@ Transform:
   m_Father: {fileID: 6421412928178292073}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2733467297187541252
+--- !u!114 &2759833707270980084
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8235,7 +8235,7 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 6421412929076350977}
-  receiver: {fileID: 4086213995371826145}
+  receiver: {fileID: 2867614676871669148}
   unityVideoPlayer: {fileID: 6421412929076350976}
   avProPlayer: {fileID: 6421412929076350978}
   unityTextureRenderer: {fileID: 6421412928394311274}
@@ -9031,7 +9031,7 @@ GameObject:
   - component: {fileID: 6421412929251080224}
   - component: {fileID: 6421412929251080227}
   - component: {fileID: 6421412929251080226}
-  - component: {fileID: 4145133605972798349}
+  - component: {fileID: 1428761034913361393}
   - component: {fileID: 6421412929251080221}
   - component: {fileID: 6421412929251080225}
   - component: {fileID: 6421412929251080230}
@@ -9153,7 +9153,7 @@ MonoBehaviour:
           m_StringArgument: OnToggle
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &4145133605972798349
+--- !u!114 &1428761034913361393
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
